@@ -58,15 +58,15 @@ class Employee extends Person {
 
 // 5. Given the data below, define an interface for representing employees:
 // HINT: You'll need 2 interfaces.
-interface EmployeeInterface {
-  name: string;
-  salary: number;
-  address: {};
-}
 interface Address {
   street: string;
   city: string;
   zipCode: number;
+}
+interface EmployeeInterface {
+  name: string;
+  salary: number;
+  address: Address;
 }
 
 let employees: EmployeeInterface = {
